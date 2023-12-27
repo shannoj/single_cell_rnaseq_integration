@@ -8,3 +8,5 @@ for (x in dirs){
  assign(name, CreateSeuratObject(counts = cts))
 }
 
+merged_seraut <- merge(HB17_background_, y = c(HB17_PDX_, HB30_tumor_, HB17_tumor_, HB53_tumor_, HB53_background_, HB30_PDX_), add.cell.ids = ls()[3:9], project = 'HB')
+
